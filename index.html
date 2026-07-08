@@ -1,44 +1,55 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Membedah Mentalitas Miskin</title>
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-    body {
-      background-color: #0a0a0a;
-      min-height: 100vh;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      padding: 20px;
-      overflow-x: hidden;
-    }
-    .container {
-      max-width: 1200px;
-      width: 100%;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-    img {
-      max-width: 100%;
-      height: auto;
-      border-radius: 12px;
-      box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Membedah Mentalitas Miskin</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            background-color: #000000; /* Latar belakang hitam pekat */
+            color: #ffffff;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+        .main-container {
+            width: 100%;
+            max-width: 1200px; /* Lebar kontainer maksimal */
+            display: flex;
+            flex-direction: column; /* Mengatur tata letak vertikal */
+            gap: 30px; /* Jarak antar gambar */
+        }
+        .image-container {
+            text-align: center; /* Meratakan konten di tengah */
+        }
+        .image-container img {
+            width: 100%; /* Gambar responsif sesuai lebar kontainer */
+            height: auto;
+            border: 2px solid #333333; /* Batas subtil abu-abu gelap */
+            border-radius: 8px; /* Sudut membulat */
+            box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1); /* Bayangan putih halus */
+        }
+    </style>
 </head>
 <body>
-
-  <div class="container">
-    <img src="Membedah__Mentalitas_Miskin_.png" alt="Membedah Mentalitas Miskin">
-  </div>
-
+    <div class="main-container">
+        <!-- Spanduk Visual (Mental Miskin) - Diletakkan di atas -->
+        <div class="image-container">
+            <img src="mental_miskin.png" alt="Mental Miskin Spanduk Visual">
+        </div>
+        
+        <!-- Infografis Detail (Membedah Mentalitas Miskin) - Diletakkan di bawah -->
+        <div class="image-container">
+            <img src="Membedah__Mentalitas_Miskin_.png" alt="Membedah Mentalitas Miskin Infografis">
+        </div>
+    </div>
 </body>
 </html>
